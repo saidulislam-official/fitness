@@ -4,6 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Miama";
+  src: url("/font/Miama.ttf") format("truetype");
+  font-weight: normal; 
+  font-style: normal;
+}
+
 body{
   margin: 0;
 }
@@ -18,7 +25,7 @@ body{
   background-color: rgba(230, 83, 60, 1);
 }
 .background-color-2{
-  background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+  background: linear-gradient(180deg, #111111 100%, rgba(119, 119, 119, 0) 0%);
 }
 
 /* header - nav  */
@@ -63,4 +70,40 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+}
+.header-content-describe{
+  max-width: 37.4375rem;
+  
+}
+.header-title{
+  font-size: 4.875rem;
+  line-height: 5.85rem;
+  font-weight: 900;
+}
+.header-title span{
+  font-weight: 400;
+  font-style: italic;
+  font-family: "miama";
+}
+.header-text{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header-btn-1{
+  border-radius: 2.625rem;
+  padding: 1rem 2.875rem;
+  border: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.header-btn-2{
+  border-radius: 2.625rem;
+  padding: 1rem 2.875rem;
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: linear-gradient(180deg, #111111 100%, rgba(119, 119, 119, 0) 100%);;
 }
