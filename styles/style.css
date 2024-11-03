@@ -74,6 +74,7 @@ body{
 }
 .header-content-describe{
   max-width: 37.4375rem;
+  margin-bottom: 4.75rem;
   
 }
 .header-title{
@@ -105,5 +106,6 @@ body{
   border: 1px solid rgba(255, 255, 255, 1);
   font-size: 1.125rem;
   font-weight: 600;
-  background: linear-gradient(180deg, #111111 100%, rgba(119, 119, 119, 0) 100%);;
+  background: linear-gradient(180deg, #111111 100%, rgba(119, 119, 119, 0) 100%);
+  margin-left: 0.875rem;
 }
