@@ -38,7 +38,7 @@ body{
 .hide-show{
   display: none;
 }
-.header-nav, .change-habit, .extra-mile, .exercise-section{
+.header-nav, .change-habit, .extra-mile, .exercise-section, .bmi-describe, .bmi-form{
   max-width: 1060px;
   margin: 0 auto;
 
@@ -318,6 +318,53 @@ body{
   background: #0047FF4D;
 
 }
+/* bmi section */
+.bmi-describe{
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+.bmi-form{
+  display: flex;
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+  gap: 3rem;
+}
+.bmi-form-section{
+  background: #222222;
+}
+/* bmi table */
+.bmi-details-table{
+  border-collapse: collapse; 
+  text-align: center;
+  
+}
+.bmi-details-table, th, td{
+  border: 1px solid #FFFFFF1A;
+  padding: 1rem 1.25rem;
+}
+
+/* BMI  form container */
+
+.bmi-form-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.full-width{
+  grid-column: span 2;
+}
+.text-size1{
+  color:  #FFFFFF99;;
+  background-color: #383838;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+}
+.calculate-btn{
+  margin-top:2rem;
+}
 
 /* media query for mobile */
 
@@ -423,5 +470,16 @@ body{
   }
   .exercise-card{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .bmi-form{
+    display: inline;
+    gap: 1rem;
+  }
+  .bmi-details{
+    padding-left: 1rem;
+  }
+  .text-size1{
+    
+    padding: 0.3rem 0.3rem;
   }
 }
