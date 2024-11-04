@@ -38,7 +38,8 @@ body{
 .hide-show{
   display: none;
 }
-.header-nav, .change-habit, .extra-mile, .exercise-section, .bmi-describe, .bmi-form{
+.header-nav, .change-habit, .extra-mile, .exercise-section, .bmi-describe, 
+.bmi-form, .meet-our-team{
   max-width: 1060px;
   margin: 0 auto;
 
@@ -366,6 +367,35 @@ body{
   margin-top:2rem;
 }
 
+/* trainer section  */
+.meet-our-team-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+  background-color: #191919;
+  border-radius: 2rem;
+  padding: 2rem 2rem;
+}
+.meet-our-team-describe{
+  margin-top: 5.5rem;
+  text-align: center;
+}
+.meet-our-team-card img{
+  width: 20rem;
+  height: 16rem;
+}
+.meet-card{
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.text-overlay{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
 /* media query for mobile */
 
 @media screen and (max-width: 576px){
@@ -481,5 +511,8 @@ body{
   .text-size1{
     
     padding: 0.3rem 0.3rem;
+  }
+  .meet-our-team-card{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
